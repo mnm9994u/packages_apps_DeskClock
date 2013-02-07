@@ -233,7 +233,7 @@ public class AlarmAlertFullScreen extends Activity implements GlowPadView.OnTrig
         final String vol =
                 PreferenceManager.getDefaultSharedPreferences(this)
                 .getString(SettingsActivity.KEY_VOLUME_BEHAVIOR,
-                        DEFAULT_VOLUME_BEHAVIOR);
+                        SettingsActivity.DEFAULT_VOLUME_BEHAVIOR);
         mVolumeBehavior = Integer.parseInt(vol);
 
         final Window win = getWindow();
